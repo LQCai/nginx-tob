@@ -9,4 +9,8 @@ if [ -f "/home/ssh/key" ]; then
   ssh -o "StrictHostKeyChecking no" "gitlab.com"
 fi
 
+if [ -f "/home/www/*.sh" ]; then
+  sh /home/www/*.sh
+fi
+
 nginx -g 'daemon off;'
