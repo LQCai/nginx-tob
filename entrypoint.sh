@@ -9,9 +9,9 @@ if [ -f "/home/ssh/key" ]; then
   ssh -o "StrictHostKeyChecking no" "gitlab.com"
 fi
 
-if [ -f "/usr/share/nginx/html/*.sh" ]; then
-  chmod +x /usr/share/nginx/html/*.sh
-  sh /usr/share/nginx/html/*.sh
+if [ -f "/usr/share/nginx/html/pull.sh" ]; then
+  chmod +x /usr/share/nginx/html/pull.sh
+  sh /usr/share/nginx/html/pull.sh
 fi
 
 nginx -g 'daemon off;'
