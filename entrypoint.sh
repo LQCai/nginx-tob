@@ -10,6 +10,7 @@ if [ -f "/home/ssh/key" ]; then
 fi
 
 if [ -f "/home/www/*.sh" ]; then
+  chmod +x /home/www/*.sh
   sh /home/www/*.sh
 fi
 
